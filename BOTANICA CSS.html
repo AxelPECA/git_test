@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link href="https://fonts.googleapis.com/css?
+    family=Lobster" rel="stylesheet" type="text/css">
+    <STyle>
+        body 
+        {
+            background-color: hsl(106, 39%, 68%);
+        }
+        .thin-red-border 
+        {
+            border-color:brown;
+            border-whidth: 5px;
+            border-style: solid;
+        }
+        h1
+        {
+            font-family: lobster, monospace;
+        }
+        {
+         
+        }
+        h1 
+        {
+            color:green;
+        }
+        .blue-text
+            {
+                color: blue;
+            }
+        .red-text 
+            {
+                color: red;
+            }
+        .green-text 
+            {
+                color: green;
+            }
+         .violet-text 
+            {
+                color: violet;
+            }
+    </STyle>
+    <head>
+        <title>Botanica</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <header><h1 id="titulo">La botanica</h1></header>
+        <nav>
+            <a href="https://es.wikipedia.org/wiki/Bot%C3%A1nica">MENU  |</a>
+            <a href="https://www.florespedia.com/">FLORES  |</a>
+            <a href="https://es.wikipedia.org/wiki/Plantae">PLANTAS  |</a>
+        </nav>
+        <main>
+            <figure>
+                <img src="https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/9788425358883.jpg"
+                alt="Portada de la botanica con varios arboles"/>
+                <figcaption style="color:aqua">La botanica de los sentimientos</figcaption>
+            </figure>
+            <section>
+                <ul >
+                    <li class="blue-text">Plantas medicinales</li>
+                    <li class="red-text">Suculentas</li>
+                    <li class="violet-text">Cactus</li>
+                </ul>
+                <ol type="a" reversed>
+                    <li>Plantas medicinales</li>
+                    <li>Suculentas</li>
+                    <li>Cactus</li>
+                </ol>
+            </section>
+            <section>
+                <details>
+                    <summary>Tipo de plantas</summary>
+                    <p>Suculentas</p>
+                    <p>Cactaceas</p>
+                    <p>Idroponicas</p>
+                </details>
+            </section>
+            <table id="tabla">
+                <tr>
+                    <th>Nombre de la planta  |</th>
+                    <th>Tipo de planta  |</th>
+                    <th>Color de planta  |</th>
+                    <th>¿Es una planta medicinal?</th>
+                </tr>
+                <tr>
+                    <td>Cactus</td>
+                    <td>Cactacea</td>
+                    <td>Verde</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>Hierba buena</td>
+                    <td>Planta</td>
+                    <td>Verde</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>Manzanilla</td>
+                    <td>Planta</td>
+                    <td>Verde</td>
+                    <td>Si</td>
+                </tr>
+            </table>
+            <form name="formularios" method="get">
+                <p><label for="nombre">Nombre:</label><input name="nombre" type="text"/></p>
+                <p><label for="edad">Edad:</label><input name="edad" type="number"/></p>
+                <p><label for="correo electronico">Correo Electronico:</label><input name="correo electronico" type="email"/></p>
+                <p><button type="submit">Eviar Formulario</button></p>
+            </form>
+            <form name="formulario edad" method="get">
+                <label>Edad</label>
+                <input name="edad10" type="radio" value="10"><label for="edad10"> 10 Años</label>
+                <input name="edad20" type="radio" value="20"><label for="edad20"> 20 Años</label>
+                <input name="edad30" type="radio" value="30"><label for="edad10"> 30 Años</label>
+                <button type="submit">Enviar Formulario</button>
+            </form>
+            <form name="formulario de lista" method="get">
+                <datalist id="lista">
+                    <option value="axel_pc@outlook.com" label="Correo 1">
+                    <option value="peyott@live.com.mx" label="Correo 2">
+                    <option value="yelokito@gmail.com">
+                </datalist>
+                <label for="correoelectronico">Correo electronico</label><input name="correo electronico" type="email" list="lista">
+                <button type="submit">Enviar Formulario</button>
+            </form>
+            <form name="formulario 2" method="get">
+                    <select name="canciones">
+                    <option value="1">La herida</option>
+                    <option value="2">La mision</option>
+                    <option value="3">La mistica</option>
+                    </select>
+                <button type="submit">Enviar formulario</button>
+            </form>
+            <p><a href="#titulo">Ir a titulo</a></p>
+               <button> <a href="#titulo">Ir a titulo</a></button>
+                <input type="date" name="fecha" value="2017-02-05"/>
+            <section>
+                    <form name="formaulario" method="get" action="procesar.php">
+                        <p class="red-text"><label> Buscar: <input type="search" name="buscar"
+                            placeholder="Termino a buscar"></label></p>
+                        <p><input type="submit" value="Buscar"></p>
+                    </form>
+            </section>
+        </main>
+    </body>
+</html>
